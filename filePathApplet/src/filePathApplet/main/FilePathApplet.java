@@ -4,7 +4,6 @@ import java.applet.Applet;
 import java.awt.FileDialog;
 import java.awt.Frame;
 import java.io.File;
-
 import netscape.javascript.JSObject;
 
 public class FilePathApplet extends Applet{
@@ -29,5 +28,4 @@ public class FilePathApplet extends Applet{
 			jso.call("afegirFitxer", new Object [] {ffile.getPath(),ffile.getParent(),ffile.getName().substring(ffile.getName().length()-3)});
 		}
 	}
-	
 }
